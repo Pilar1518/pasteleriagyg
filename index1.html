@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | Glaze & Joy</title>
+    <meta name="description" content="Nuestra deliciosa selección de postres y helados artesanales con sabores peruanos.">
+    <link rel="icon" href="Captura_de_pantalla_2025-07-15_121026-removebg-preview.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+       <link rel="stylesheet" href="estilo.css">
+    <style>
+        /* Usa los mismos estilos que en hfh.html o vincula a un archivo CSS externo */
+        /* Copia todo el bloque de estilos del hfh.html aquí */
+        :root {
+            --color-primary: #FFD1DC;
+            --color-secondary: #FFECB8;
+            --color-accent: #B5EAD7;
+            --color-text: #5E5343;
+            --color-light: #FFF9F9;
+            --color-dark: #8B7355;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--color-light);
+            color: var(--color-text);
+            line-height: 1.6;
+        }
+        
+        /* ... (todos los demás estilos del hfh.html) ... */
+    </style>
+</head>
+<body>
+    <!-- Header/Navegación (igual que en hfh.html) -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Captura_de_pantalla_2025-07-15_121026-removebg-preview.png" alt="Glaze y Joy - Pastelería">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index1.html" class="active">Productos</a></li>
+                    <li><a href="index2.html">Nosotros</a></li>
+                    <li><a href="index3.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <div class="search-container">
+                    <form action="buscar.html" method="get">
+                        <input type="text" placeholder="Buscar productos..." name="q" id="search-input">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                <a href="#" id="login-btn"><i class="fas fa-user"></i></a>
+                <a href="carrito.html"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero/Banner de productos -->
+    <section class="category-hero" style="background-image: url('https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+        <div class="container">
+            <h1>Nuestros Productos</h1>
+            <p>Descubre nuestra exquisita selección de postres y helados artesanales</p>
+        </div>
+    </section>
+
+    <!-- Categorías de productos -->
+    <section class="categories-section" style="padding: 50px 0;">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 30px; color: var(--color-dark);">Explora nuestras categorías</h2>
+            <div class="categories-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px;">
+                <div class="category-card" style="background-color: white; border-radius: 8px; overflow: hidden; box-shadow: 0 3px 10px rgba(0,0,0,0.08); transition: transform 0.3s;">
+                    <a href="productos-lucuma.html" style="text-decoration: none; color: inherit;">
+                        <div class="category-image" style="height: 200px; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Lúcuma" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="category-info" style="padding: 20px; text-align: center;">
+                            <h3 style="margin-bottom: 10px;">Productos con Lúcuma</h3>
+                            <p style="color: var(--color-text);">El oro de los incas en deliciosos postres</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="category-card" style="background-color: white; border-radius: 8px; overflow: hidden; box-shadow: 0 3px 10px rgba(0,0,0,0.08); transition: transform 0.3s;">
+                    <a href="productos-chocolate.html" style="text-decoration: none; color: inherit;">
+                        <div class="category-image" style="height: 200px; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Chocolate" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="category-info" style="padding: 20px; text-align: center;">
+                            <h3 style="margin-bottom: 10px;">Chocolate</h3>
+                            <p style="color: var(--color-text);">Delicias con el mejor cacao peruano</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="category-card" style="background-color: white; border-radius: 8px; overflow: hidden; box-shadow: 0 3px 10px rgba(0,0,0,0.08); transition: transform 0.3s;">
+                    <a href="productos-frutas.html" style="text-decoration: none; color: inherit;">
+                        <div class="category-image" style="height: 200px; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Frutas" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="category-info" style="padding: 20px; text-align: center;">
+                            <h3 style="margin-bottom: 10px;">Frutas Tropicales</h3>
+                            <p style="color: var(--color-text);">Sabores frescos y naturales</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="category-card" style="background-color: white; border-radius: 8px; overflow: hidden; box-shadow: 0 3px 10px rgba(0,0,0,0.08); transition: transform 0.3s;">
+                    <a href="productos-clasicos.html" style="text-decoration: none; color: inherit;">
+                        <div class="category-image" style="height: 200px; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Clásicos" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="category-info" style="padding: 20px; text-align: center;">
+                            <h3 style="margin-bottom: 10px;">Postres Clásicos</h3>
+                            <p style="color: var(--color-text);">Las recetas tradicionales que amas</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos destacados -->
+    <main class="main-content">
+        <div class="container">
+            <h2 style="text-align: center; margin: 40px 0; color: var(--color-dark);">Nuestros productos destacados</h2>
+            
+            <!-- Filtros y ordenamiento (igual que en hfh.html) -->
+            <div class="product-filters">
+                <div class="filter-section">
+                    <span>Ordenar por:</span>
+                    <select id="sort-by">
+                        <option value="popular">Más populares</option>
+                        <option value="price-asc">Precio: menor a mayor</option>
+                        <option value="price-desc">Precio: mayor a menor</option>
+                        <option value="name">Nombre</option>
+                    </select>
+                </div>
+                <div class="filter-section">
+                    <span>Mostrar:</span>
+                    <select id="show-items">
+                        <option value="6">6 productos</option>
+                        <option value="12">12 productos</option>
+                        <option value="24">24 productos</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Lista de productos (similar a hfh.html pero con más variedad) -->
+            <div class="product-grid">
+                <!-- Producto 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Trufas de Chocolate">
+                        <div class="product-badge">Más vendido</div>
+                        <button class="quick-view">Vista rápida</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Trufas de Chocolate</h3>
+                        <div class="product-price">
+                            <span class="price">S/ 28.00 docena</span>
+                        </div>
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1519869325930-281384150729?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Cheesecake de Maracuyá">
+                        <button class="quick-view">Vista rápida</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Cheesecake de Maracuyá</h3>
+                        <div class="product-price">
+                            <span class="price">S/ 42.00</span>
+                        </div>
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1542826438-bd32f43d626f?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Pie de Limón">
+                        <div class="product-badge">Oferta</div>
+                        <button class="quick-view">Vista rápida</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Pie de Limón</h3>
+                        <div class="product-price">
+                            <span class="price">S/ 35.00</span>
+                            <span class="old-price">S/ 40.00</span>
+                        </div>
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Brownie de Chocolate">
+                        <button class="quick-view">Vista rápida</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Brownie de Chocolate</h3>
+                        <div class="product-price">
+                            <span class="price">S/ 18.00</span>
+                        </div>
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Producto 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Helado de Guanábana">
+                        <div class="product-badge">Nuevo</div>
+                        <button class="quick-view">Vista rápida</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Helado de Guanábana</h3>
+                        <div class="product-price">
+                            <span class="price">S/ 14.00</span>
+                        </div>
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Producto 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1562440499-64c9a111f713?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Pionono de Dulce de Leche">
+                        <button class="quick-view">Vista rápida</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Pionono de Dulce de Leche</h3>
+                        <div class="product-price">
+                            <span class="price">S/ 30.00</span>
+                        </div>
+                        <button class="add-to-cart">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paginación -->
+            <div class="pagination">
+                <a href="#" class="prev"><i class="fas fa-chevron-left"></i></a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#" class="next"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (igual que en hfh.html) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h4>Nuestra pastelería</h4>
+                    <ul>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="historia.html">Nuestra historia</a></li>
+                        <li><a href="calidad.html">Compromiso de calidad</a></li>
+                        <li><a href="blog.html">Blog dulce</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+                        <li><a href="envios.html">Envíos y entregas</a></li>
+                        <li><a href="devoluciones.html">Devoluciones</a></li>
+                        <li><a href="sucursales.html">Nuestras sucursales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i>  Av. Livertadores 123, Ticapampa</li>
+                        <li><i class="fas fa-phone"></i> +1 958 908 426</li>
+                        <li><i class="fas fa-envelope"></i> glazzejoy@gmail.com</li>
+                        <li><i class="fas fa-clock"></i> Lunes a Sábado: 9am - 8pm</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Síguenos</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                    <h4>Métodos de pago</h4>
+                    <div class="payment-methods">
+                        <img src="https://via.placeholder.com/40x25?text=VISA" alt="Visa">
+                        <img src="https://via.placeholder.com/40x25?text=MC" alt="Mastercard">
+                        <img src="https://via.placeholder.com/40x25?text=PP" alt="PayPal">
+                        <img src="https://via.placeholder.com/40x25?text=YP" alt="Yape">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Glaze & Joy - Pastelería Artesanal. Todos los derechos reservados.</p>
+                <div class="legal-links">
+                    <a href="privacidad.html">Política de privacidad</a>
+                    <a href="terminos.html">Términos y condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modales (igual que en hfh.html) -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Iniciar Sesión</h2>
+            <form id="login-form">
+                <input type="email" placeholder="Correo electrónico" required>
+                <input type="password" placeholder="Contraseña" required>
+                <button type="submit">Ingresar</button>
+            </form>
+            <p>¿No tienes cuenta? <a href="#" id="show-register">Regístrate aquí</a></p>
+        </div>
+    </div>
+
+    <div id="register-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Registro</h2>
+            <form id="register-form">
+                <input type="text" placeholder="Nombre completo" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <input type="password" placeholder="Contraseña" required>
+                <input type="password" placeholder="Confirmar contraseña" required>
+                <button type="submit">Registrarse</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Botón flotante de WhatsApp -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/51987654321?text=Hola%20Glaze%20%26%20Joy,%20quisiera%20información%20sobre%20sus%20productos" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Scripts (igual que en hfh.html) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Búsqueda
+            const searchForm = document.querySelector('.search-container form');
+            searchForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const query = document.getElementById('search-input').value;
+                if(query.trim()) {
+                    alert(`Buscando: ${query}`);
+                    // window.location.href = `buscar.html?q=${encodeURIComponent(query)}`;
+                }
+            });
+            
+            // Login/Registro
+            const loginBtn = document.getElementById('login-btn');
+            const loginModal = document.getElementById('login-modal');
+            const registerModal = document.getElementById('register-modal');
+            const showRegister = document.getElementById('show-register');
+            const closeModals = document.querySelectorAll('.close-modal');
+            
+            loginBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                loginModal.style.display = 'block';
+            });
+            
+            showRegister.addEventListener('click', function(e) {
+                e.preventDefault();
+                loginModal.style.display = 'none';
+                registerModal.style.display = 'block';
+            });
+            
+            closeModals.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    loginModal.style.display = 'none';
+                    registerModal.style.display = 'none';
+                });
+            });
+            
+            window.addEventListener('click', function(e) {
+                if(e.target === loginModal) loginModal.style.display = 'none';
+                if(e.target === registerModal) registerModal.style.display = 'none';
+            });
+            
+            // Formularios de login/registro
+            document.getElementById('login-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Inicio de sesión exitoso (simulado)');
+                loginModal.style.display = 'none';
+            });
+            
+            document.getElementById('register-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Registro exitoso (simulado)');
+                registerModal.style.display = 'none';
+            });
+            
+            // Carrito
+            document.querySelectorAll('.add-to-cart').forEach(button => {
+                button.addEventListener('click', function() {
+                    const productCard = this.closest('.product-card');
+                    const productName = productCard.querySelector('h3').textContent;
+                    const productPrice = productCard.querySelector('.price').textContent;
+                    
+                    // Simular añadir al carrito
+                    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                    cart.push({name: productName, price: productPrice});
+                    localStorage.setItem('cart', JSON.stringify(cart));
+                    
+                    alert(`¡${productName} añadido al carrito!\nPrecio: ${productPrice}`);
+                });
+            });
+            
+            // Vista rápida
+            document.querySelectorAll('.quick-view').forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const productCard = this.closest('.product-card');
+                    const productName = productCard.querySelector('h3').textContent;
+                    const productPrice = productCard.querySelector('.price').textContent;
+                    
+                    alert(`Vista rápida: ${productName}\nPrecio: ${productPrice}\n\nDescripción detallada del producto...`);
+                });
+            });
+            
+            // Ordenar productos
+            document.getElementById('sort-by').addEventListener('change', function() {
+                const sortBy = this.value;
+                const productsContainer = document.querySelector('.product-grid');
+                const products = Array.from(productsContainer.children);
+                
+                products.sort((a, b) => {
+                    const priceA = parseFloat(a.querySelector('.price').textContent.replace('S/ ', ''));
+                    const priceB = parseFloat(b.querySelector('.price').textContent.replace('S/ ', ''));
+                    const nameA = a.querySelector('h3').textContent.toLowerCase();
+                    const nameB = b.querySelector('h3').textContent.toLowerCase();
+                    
+                    switch(sortBy) {
+                        case 'price-asc': return priceA - priceB;
+                        case 'price-desc': return priceB - priceA;
+                        case 'name': return nameA.localeCompare(nameB);
+                        default: return 0;
+                    }
+                });
+                
+                products.forEach(product => productsContainer.appendChild(product));
+            });
+            
+            // Mostrar cantidad de productos
+            document.getElementById('show-items').addEventListener('change', function() {
+                const showCount = parseInt(this.value);
+                const allProducts = document.querySelectorAll('.product-card');
+                
+                allProducts.forEach((product, index) => {
+                    product.style.display = index < showCount ? 'block' : 'none';
+                });
+                
+                // Actualizar paginación (simulado)
+                const pageCount = Math.ceil(allProducts.length / showCount);
+                updatePagination(pageCount);
+            });
+            
+            // Paginación
+            function updatePagination(pageCount) {
+                const pagination = document.querySelector('.pagination');
+                pagination.innerHTML = '';
+                
+                // Botón anterior
+                pagination.innerHTML += '<a href="#" class="prev"><i class="fas fa-chevron-left"></i></a>';
+                
+                // Números de página
+                for(let i = 1; i <= pageCount; i++) {
+                    pagination.innerHTML += `<a href="#" ${i === 1 ? 'class="active"' : ''}>${i}</a>`;
+                }
+                
+                // Botón siguiente
+                pagination.innerHTML += '<a href="#" class="next"><i class="fas fa-chevron-right"></i></a>';
+                
+                // Event listeners para los nuevos botones
+                document.querySelectorAll('.pagination a:not(.prev):not(.next)').forEach(link => {
+                    link.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        if(this.classList.contains('active')) return;
+                        
+                        document.querySelector('.pagination a.active').classList.remove('active');
+                        this.classList.add('active');
+                        
+                        const page = parseInt(this.textContent);
+                        const showCount = parseInt(document.getElementById('show-items').value);
+                        const allProducts = document.querySelectorAll('.product-card');
+                        
+                        allProducts.forEach((product, index) => {
+                            const start = (page - 1) * showCount;
+                            const end = start + showCount;
+                            product.style.display = (index >= start && index < end) ? 'block' : 'none';
+                        });
+                    });
+                });
+                
+                // Botones anterior/siguiente
+                document.querySelector('.pagination .prev').addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const active = document.querySelector('.pagination a.active');
+                    const prev = active.previousElementSibling;
+                    
+                    if(prev && !prev.classList.contains('prev')) {
+                        active.classList.remove('active');
+                        prev.classList.add('active');
+                        prev.click();
+                    }
+                });
+                
+                document.querySelector('.pagination .next').addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const active = document.querySelector('.pagination a.active');
+                    const next = active.nextElementSibling;
+                    
+                    if(next && !next.classList.contains('next')) {
+                        active.classList.remove('active');
+                        next.classList.add('active');
+                        next.click();
+                    }
+                });
+            }
+            
+            // Inicializar paginación
+            updatePagination(2);
+        });
+    </script>
+</body>
+</html>

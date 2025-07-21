@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros | Glaze & Joy</title>
+    <meta name="description" content="Conoce nuestra historia y pasión por la pastelería artesanal con ingredientes peruanos.">
+    <link rel="icon" href="Captura_de_pantalla_2025-07-15_121026-removebg-preview.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="estilo.css">
+    <style>
+        /* Copia todos los estilos del archivo principal aquí */
+        /* ... (pega todos los estilos CSS del archivo principal) ... */
+        
+        /* Estilos adicionales específicos para Nosotros */
+        .about-section {
+            padding: 80px 0;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .about-image {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .about-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--color-dark);
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .about-text h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 3px;
+            background-color: var(--color-accent);
+        }
+        
+        .about-text p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        .values-section {
+            background-color: var(--color-secondary);
+            padding: 80px 0;
+        }
+        
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .value-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .value-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .value-icon {
+            font-size: 2.5rem;
+            color: var(--color-accent);
+            margin-bottom: 20px;
+        }
+        
+        .team-section {
+            padding: 80px 0;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .team-card {
+            text-align: center;
+        }
+        
+        .team-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 20px;
+            border: 5px solid var(--color-primary);
+        }
+        
+        .team-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .team-info h3 {
+            margin-bottom: 5px;
+            color: var(--color-dark);
+        }
+        
+        .team-info p {
+            color: var(--color-text);
+            font-style: italic;
+        }
+        
+        @media (max-width: 768px) {
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-image {
+                order: -1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header/Navegación (igual que en el principal) -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Captura_de_pantalla_2025-07-15_121026-removebg-preview.png" alt="Glaze y Joy - Pastelería">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index1.html">Productos</a></li>
+                    <li><a href="index2.html" class="active">Nosotros</a></li>
+                    <li><a href="index3.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <div class="search-container">
+                    <form action="buscar.html" method="get">
+                        <input type="text" placeholder="Buscar productos..." name="q" id="search-input">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                <a href="#" id="login-btn"><i class="fas fa-user"></i></a>
+                <a href="carrito.html"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero/Banner de Nosotros -->
+    <section class="category-hero" style="background-image: url('https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+        <div class="container">
+            <h1>Nuestra Historia</h1>
+            <p>Conoce la pasión y dedicación que hay detrás de cada uno de nuestros postres</p>
+        </div>
+    </section>
+
+    <!-- Sección Sobre Nosotros -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Glaze & Joy: Dulces momentos desde 2024</h2>
+                    <p>Todo comenzó en un pequeño local en el corazón de Ticapampa, donde nuestra fundadora, Geraldine Pilar, decidió compartir su pasión por la pastelería con el mundo. Con recetas heredadas de su abuela y un toque de innovación, creó los primeros postres que hoy son los favoritos de nuestros clientes.</p>
+                    <p>Lo que nos diferencia es nuestro compromiso con ingredientes 100% naturales y de origen peruano. Cada producto que elaboramos lleva una parte de nuestra cultura y tradición, combinada con técnicas modernas de repostería.</p>
+                    <p>Hoy, después de más de una década, seguimos manteniendo ese espíritu artesanal que nos caracteriza, pero con una visión más amplia: llevar el sabor auténtico de la pastelería peruana a cada hogar.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Nuestro local">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Valores -->
+    <section class="values-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestros Valores</h2>
+                <p>Principios que guían nuestro trabajo cada día</p>
+            </div>
+            
+            <div class="values-grid">
+                <!-- Valor 1 -->
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Pasión</h3>
+                    <p>Amamos lo que hacemos y eso se refleja en cada uno de nuestros productos. La pastelería es nuestro arte.</p>
+                </div>
+                
+                <!-- Valor 2 -->
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Calidad</h3>
+                    <p>Usamos solo ingredientes naturales y de la más alta calidad. Nada de conservantes o colorantes artificiales.</p>
+                </div>
+                
+                <!-- Valor 3 -->
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Tradición</h3>
+                    <p>Respetamos las recetas tradicionales mientras innovamos para crear experiencias únicas.</p>
+                </div>
+                
+                <!-- Valor 4 -->
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <h3>Felicidad</h3>
+                    <p>Creemos que un buen postre puede alegrar el día a cualquiera. Ese es nuestro mayor objetivo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección del Equipo -->
+    <section class="team-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestro Equipo</h2>
+                <p>Los talentosos pasteleros detrás de cada creación</p>
+            </div>
+            
+            <div class="team-grid">
+                <!-- Miembro 1 -->
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="María Fernández">
+                    </div>
+                    <div class="team-info">
+                        <h3>María Fernández</h3>
+                        <p>Fundadora & Pastelera Maestra</p>
+                    </div>
+                </div>
+                
+                <!-- Miembro 2 -->
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Carlos Gutiérrez">
+                    </div>
+                    <div class="team-info">
+                        <h3>Carlos Gutiérrez</h3>
+                        <p>Chef Repostero</p>
+                    </div>
+                </div>
+                
+                <!-- Miembro 3 -->
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Lucía Mendoza">
+                    </div>
+                    <div class="team-info">
+                        <h3>Lucía Mendoza</h3>
+                        <p>Especialista en Decoración</p>
+                    </div>
+                </div>
+                
+                <!-- Miembro 4 -->
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Javier Ríos">
+                    </div>
+                    <div class="team-info">
+                        <h3>Javier Ríos</h3>
+                        <p>Maestro Heladero</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (igual que en el principal) -->
+    <footer class="footer">
+        <!-- ... (pega el footer del archivo principal) ... -->
+    </footer>
+
+    <!-- Modales (igual que en el principal) -->
+    <!-- ... (pega los modales del archivo principal) ... -->
+
+    <!-- Scripts (igual que en el principal) -->
+    <script>
+        // ... (pega los scripts del archivo principal) ...
+    </script>
+</body>
+</html>
